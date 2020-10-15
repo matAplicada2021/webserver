@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <script type="application/javascript" src="./javascripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas Matemática Aplicada</title>
+</head>
+<body>
+
+    <section id="login">
+
+        <section id="info">
+            <label for="name" class="nameLabel">Nome</label>
+            <section class="text">
+                <input type="text" name="name" id="name" required onfocusout="unfocus('name')" value="">
+                <section class="nameoverlay"></section>
+            </section>
+
+            <label for="pass" class="passLabel">Password</label>
+            <section class="text">
+                <input type="password" name="password" id="pass" required onfocusout="unfocus('pass')" value="">
+                <section class="passoverlay"></section>
+            </section>
+        </section>
+
+
+        <section id="errorMessage">
+            <h3>ERRO</h3>
+            <h4>O utilizador e/ou a palavra-passe estão incorrectos</h4>
+            <p>Clique para fechar</p>
+        </section>
+
+        <input type="button" id="loginBtn" value="Login" onclick="login()">
+    </section>
+
+</body>
+</html>
